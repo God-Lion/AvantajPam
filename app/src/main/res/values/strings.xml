@@ -3,6 +3,11 @@
     <string name="connection">Konekte / Inskri</string>
     <string name="yourPhoneNumber">Nimewo Telefon ou</string>
     <string name="digicelOrNatcom">Nimero Digicel oswa Natcom</string>
+    <string name="continu">Kontinye</string>
+    <string name="accept_the_terms_and_conditions_and_press_on_button_register">Akspte Tèm ak kondisyon yo epi peze sou bouton ENSKRI </string>
+    <string name="i_am_over_18_years_old_and_i_agree_terms_and_conditions.">Mwen gen plis ke 18 lane e mwen dakò avèk tèm ak kondisyon yo.</string>
+    <string name="termsAndConditions">Tèm ak Kondisyon </string>
+    <string name="privacyPolicy">Politik Konfidansyalite</string>
 
     <string name="flashcardQuestion">What is the first black people free in the world ?</string>
     <string name="flashcardAnswerHint">Empty</string>
