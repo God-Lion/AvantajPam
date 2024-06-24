@@ -72,115 +72,115 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.tvTimer = findViewById(R.id.timer);
-        this.cardView = findViewById(R.id.cardView);
-        this.tvFlashcardQuestion = findViewById(R.id.flashcardQuestion);
-        this.tvFlashcardAnswerHint = findViewById(R.id.flashcardAnswerHint);
-        this.btnPrev = findViewById(R.id.prevCard);
-        this.btnNext = findViewById(R.id.nextCard);
-        this.btnDelete = findViewById(R.id.deleteCard);
-        this.btnAnswer1 = findViewById(R.id.btnAnswer1);
-        this.btnAnswer2 = findViewById(R.id.btnAnswer2);
-        this.btnAnswer3 = findViewById(R.id.btnAnswer3);
-
-        this.dao = FlashCardsDB.getInstance(this).flashcardsDBDao();
-        this.allFlashcards = new ArrayList<>();
-        List<FlashCard> list = this.dao.getFlashCards();
-        this.allFlashcards.addAll( list );
-
-        final Drawable drawable = ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_heart);
-        assert drawable != null;
-        this.drawableShape = new Shape.DrawableShape(drawable, true, true);
-
-        this.konfettiView = findViewById(R.id.konfettiView);
-        EmitterConfig emitterConfig = new Emitter(5L, TimeUnit.SECONDS).perSecond(50);
-        Party party = new PartyFactory(emitterConfig)
-                .angle(270)
-                .spread(90)
-                .setSpeedBetween(1f, 5f)
-                .timeToLive(2000L)
-                .shapes(new Shape.Rectangle(0.2f), this.drawableShape)
-                .sizes(new Size(12, 5f, 0.2f))
-                .position(0.0, 0.0, 1.0, 0.0)
-                .build();
-
-        countdownTimer = new CountDownTimer(16000, 1000) {
-            @SuppressLint("SetTextI18n")
-            public void onTick(long millisUntilFinished) {
-                tvTimer.setText("" + millisUntilFinished / 1000);
-            }
-
-            public void onFinish() {
-            }
-        };
-
-        if (this.allFlashcards.size() == 0 || this.allFlashcards.size() == 1) {
-            this.btnPrev.setVisibility(View.INVISIBLE);
-            this.btnNext.setVisibility(View.INVISIBLE);
-        }
-        if (this.allFlashcards.size() > 1) {
-            this.btnPrev.setVisibility(View.VISIBLE);
-            this.btnNext.setVisibility(View.VISIBLE);
-        }
-        if (this.currentCardDisplayedIndex == 0) this.btnPrev.setVisibility(View.INVISIBLE);
-
-        if (this.allFlashcards.size() == 0 ) this.btnDelete.setVisibility(View.INVISIBLE);
-        else this.btnDelete.setVisibility(View.VISIBLE);
-
-        if (getIntent().getExtras() != null) {
-            int requestCode = getIntent().getExtras().getInt(FLASHCARD_EXTRA_Key, 0);
-            RelativeLayout relativeLayout = findViewById(R.id.parent);
-
-            if(requestCode == ADD_FLASHCARD_REQUEST_CODE) {
-                this.allFlashcards = new ArrayList<>();
-                list = this.dao.getFlashCards();
-                this.allFlashcards.addAll( list );
-                int lastIndex = this.allFlashcards.size() - 1;
-                FlashCard flashcard = this.allFlashcards.get(lastIndex);
-                this.tvFlashcardQuestion.setText(flashcard.getQuestion());
-                this.tvFlashcardAnswerHint.setText(flashcard.getAnswer());
-                this.btnAnswer1.setText(flashcard.getAnswer());
-                this.btnAnswer2.setText(flashcard.getWrong_answer1());
-                this.btnAnswer3.setText(flashcard.getWrong_answer2());
-                Snackbar
-                        .make(relativeLayout, getString(R.string.saveSuccessCard), Snackbar.LENGTH_LONG).show();
-            }
-            if(requestCode == EDIT_FLASHCARD_REQUEST_CODE) {
-                int id = getIntent().getExtras().getInt(FLASHCARD_EXTRA_EDIT_ID, 0);
-                FlashCard flashcard = this.dao.getFlashcardById(id);
-                this.tvFlashcardQuestion.setText(flashcard.getQuestion());
-                this.tvFlashcardAnswerHint.setText(flashcard.getAnswer());
-                this.btnAnswer1.setText(flashcard.getAnswer());
-                this.btnAnswer2.setText(flashcard.getWrong_answer1());
-                this.btnAnswer3.setText(flashcard.getWrong_answer2());
-                Snackbar
-                        .make(relativeLayout, getString(R.string.modifySuccessCard), Snackbar.LENGTH_LONG).show();
-            }
-        } else {
-            if (this.allFlashcards != null && !this.allFlashcards.isEmpty()) {
-                FlashCard flashcard = allFlashcards.get(0);
-                this.tvFlashcardQuestion.setText(flashcard.getQuestion());
-                this.tvFlashcardAnswerHint.setText(flashcard.getAnswer());
-                this.btnAnswer1.setText(flashcard.getAnswer());
-                this.btnAnswer2.setText(flashcard.getWrong_answer1());
-                this.btnAnswer3.setText(flashcard.getWrong_answer2());
-                startTimer();
-            }
-        }
-        this.tvFlashcardQuestion.setOnClickListener(this::showQuestion);
-        this.tvFlashcardAnswerHint.setOnClickListener(this::showAnswer);
-        this.btnPrev.setOnClickListener(this::onPrevFlashCard);
-        this.btnNext.setOnClickListener(this::onNextFlashCard);
-        this.btnDelete.setOnClickListener(view -> onDeleteFlashCard());
-        this.btnAnswer1.setOnClickListener(this::onAnswer1);
-        this.btnAnswer2.setOnClickListener(this::onAnswer2);
-        this.btnAnswer3.setOnClickListener(this::onAnswer3);
-
-        FloatingActionButton fabEdit = findViewById(R.id.fabEdit);
-        fabEdit.setOnClickListener(view -> onEditFlashCard());
-
-        FloatingActionButton fabNew = findViewById(R.id.fabNew);
-        fabNew.setOnClickListener(view -> onAddNewFlashCard());
+//        this.tvTimer = findViewById(R.id36.timer);
+//        this.cardView = findViewById(R.id.cardView);
+//        this.tvFlashcardQuestion = findViewById(R.id.flashcardQuestion);
+//        this.tvFlashcardAnswerHint = findViewById(R.id.flashcardAnswerHint);
+//        this.btnPrev = findViewById(R.id.prevCard);
+//        this.btnNext = findViewById(R.id.nextCard);
+//        this.btnDelete = findViewById(R.id.deleteCard);
+//        this.btnAnswer1 = findViewById(R.id.btnAnswer1);
+//        this.btnAnswer2 = findViewById(R.id.btnAnswer2);
+//        this.btnAnswer3 = findViewById(R.id.btnAnswer3);
+//
+//        this.dao = FlashCardsDB.getInstance(this).flashcardsDBDao();
+//        this.allFlashcards = new ArrayList<>();
+//        List<FlashCard> list = this.dao.getFlashCards();
+//        this.allFlashcards.addAll( list );
+//
+//        final Drawable drawable = ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_heart);
+//        assert drawable != null;
+//        this.drawableShape = new Shape.DrawableShape(drawable, true, true);
+//
+//        this.konfettiView = findViewById(R.id.konfettiView);
+//        EmitterConfig emitterConfig = new Emitter(5L, TimeUnit.SECONDS).perSecond(50);
+//        Party party = new PartyFactory(emitterConfig)
+//                .angle(270)
+//                .spread(90)
+//                .setSpeedBetween(1f, 5f)
+//                .timeToLive(2000L)
+//                .shapes(new Shape.Rectangle(0.2f), this.drawableShape)
+//                .sizes(new Size(12, 5f, 0.2f))
+//                .position(0.0, 0.0, 1.0, 0.0)
+//                .build();
+//
+//        countdownTimer = new CountDownTimer(16000, 1000) {
+//            @SuppressLint("SetTextI18n")
+//            public void onTick(long millisUntilFinished) {
+//                tvTimer.setText("" + millisUntilFinished / 1000);
+//            }
+//
+//            public void onFinish() {
+//            }
+//        };
+//
+//        if (this.allFlashcards.size() == 0 || this.allFlashcards.size() == 1) {
+//            this.btnPrev.setVisibility(View.INVISIBLE);
+//            this.btnNext.setVisibility(View.INVISIBLE);
+//        }
+//        if (this.allFlashcards.size() > 1) {
+//            this.btnPrev.setVisibility(View.VISIBLE);
+//            this.btnNext.setVisibility(View.VISIBLE);
+//        }
+//        if (this.currentCardDisplayedIndex == 0) this.btnPrev.setVisibility(View.INVISIBLE);
+//
+//        if (this.allFlashcards.size() == 0 ) this.btnDelete.setVisibility(View.INVISIBLE);
+//        else this.btnDelete.setVisibility(View.VISIBLE);
+//
+//        if (getIntent().getExtras() != null) {
+//            int requestCode = getIntent().getExtras().getInt(FLASHCARD_EXTRA_Key, 0);
+//            RelativeLayout relativeLayout = findViewById(R.id.parent);
+//
+//            if(requestCode == ADD_FLASHCARD_REQUEST_CODE) {
+//                this.allFlashcards = new ArrayList<>();
+//                list = this.dao.getFlashCards();
+//                this.allFlashcards.addAll( list );
+//                int lastIndex = this.allFlashcards.size() - 1;
+//                FlashCard flashcard = this.allFlashcards.get(lastIndex);
+//                this.tvFlashcardQuestion.setText(flashcard.getQuestion());
+//                this.tvFlashcardAnswerHint.setText(flashcard.getAnswer());
+//                this.btnAnswer1.setText(flashcard.getAnswer());
+//                this.btnAnswer2.setText(flashcard.getWrong_answer1());
+//                this.btnAnswer3.setText(flashcard.getWrong_answer2());
+//                Snackbar
+//                        .make(relativeLayout, getString(R.string.saveSuccessCard), Snackbar.LENGTH_LONG).show();
+//            }
+//            if(requestCode == EDIT_FLASHCARD_REQUEST_CODE) {
+//                int id = getIntent().getExtras().getInt(FLASHCARD_EXTRA_EDIT_ID, 0);
+//                FlashCard flashcard = this.dao.getFlashcardById(id);
+//                this.tvFlashcardQuestion.setText(flashcard.getQuestion());
+//                this.tvFlashcardAnswerHint.setText(flashcard.getAnswer());
+//                this.btnAnswer1.setText(flashcard.getAnswer());
+//                this.btnAnswer2.setText(flashcard.getWrong_answer1());
+//                this.btnAnswer3.setText(flashcard.getWrong_answer2());
+//                Snackbar
+//                        .make(relativeLayout, getString(R.string.modifySuccessCard), Snackbar.LENGTH_LONG).show();
+//            }
+//        } else {
+//            if (this.allFlashcards != null && !this.allFlashcards.isEmpty()) {
+//                FlashCard flashcard = allFlashcards.get(0);
+//                this.tvFlashcardQuestion.setText(flashcard.getQuestion());
+//                this.tvFlashcardAnswerHint.setText(flashcard.getAnswer());
+//                this.btnAnswer1.setText(flashcard.getAnswer());
+//                this.btnAnswer2.setText(flashcard.getWrong_answer1());
+//                this.btnAnswer3.setText(flashcard.getWrong_answer2());
+//                startTimer();
+//            }
+//        }
+//        this.tvFlashcardQuestion.setOnClickListener(this::showQuestion);
+//        this.tvFlashcardAnswerHint.setOnClickListener(this::showAnswer);
+//        this.btnPrev.setOnClickListener(this::onPrevFlashCard);
+//        this.btnNext.setOnClickListener(this::onNextFlashCard);
+//        this.btnDelete.setOnClickListener(view -> onDeleteFlashCard());
+//        this.btnAnswer1.setOnClickListener(this::onAnswer1);
+//        this.btnAnswer2.setOnClickListener(this::onAnswer2);
+//        this.btnAnswer3.setOnClickListener(this::onAnswer3);
+//
+//        FloatingActionButton fabEdit = findViewById(R.id.fabEdit);
+//        fabEdit.setOnClickListener(view -> onEditFlashCard());
+//
+//        FloatingActionButton fabNew = findViewById(R.id.fabNew);
+//        fabNew.setOnClickListener(view -> onAddNewFlashCard());
     }
 
 
