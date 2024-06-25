@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SMSVerification"
+    tools:ignore="MissingClass">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:contentDescription="@string/button_previous_card"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="127dp"
+        android:contentDescription="@string/button_previous_card"
+        android:src="@drawable/avantajpam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        tools:ignore="ContentDescription,RedundantDescriptionCheck,RtlHardcoded" />
+    <TextView
+        android:id="@+id/sms_verification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:gravity="center"
+        android:text="@string/sms_verification"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+    <TextView
+        android:id="@+id/sent_temporary_code_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:gravity="center"
+        android:text="@string/we_have_just_sent_a_code_temporary_by_sms_on_your_phone_number."
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sms_verification" />
+
+
+    <com.mukeshsolanki.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:inputType="text"
+        android:itemBackground="@drawable/bg_otp_item"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:OtpHideLineWhenFilled="true"
+        app:OtpItemCount="4"
+        app:OtpItemSpacing="6dp"
+        app:OtpLineColor="@color/otp_item_state"
+        app:OtpState_filled="true"
+        app:OtpViewType="line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sent_temporary_code_message" />
+
+    <TextView
+        android:id="@+id/did_you_not_receive_the_code_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center"
+        android:text="@string/did_you_not_receive_the_code"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otp_view" />
+
+    <TextView
+        android:id="@+id/send_another_sms_again_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:autoLink="web"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:text="@string/send_another_sms_again"
+        android:textAllCaps="false"
+        android:textColor="@color/hyperlink_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/did_you_not_receive_the_code_message" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/send_another_sms_again_message">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="@string/_1"
+                app:cornerRadius="24dp"/>
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_margin="5dp"
+                android:text="@string/_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_margin="5dp"
+                android:text="@string/_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_margin="5dp"
+                android:text="@string/_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_margin="5dp"
+                android:text="@string/_5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_margin="5dp"
+                android:text="@string/_6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_margin="5dp"
+                android:text="@string/_7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_margin="5dp"
+                android:text="@string/_8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_margin="5dp"
+                android:text="@string/_9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/clear"
+                app:srcCompat="@drawable/ic_prev"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_margin="5dp"
+                android:text="@string/_0"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_margin="5dp"
+                android:text="@string/ok"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

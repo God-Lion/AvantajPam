@@ -8,6 +8,38 @@
     <string name="i_am_over_18_years_old_and_i_agree_terms_and_conditions.">Mwen gen plis ke 18 lane e mwen dakò avèk tèm ak kondisyon yo.</string>
     <string name="termsAndConditions">Tèm ak Kondisyon </string>
     <string name="privacyPolicy">Politik Konfidansyalite</string>
+    <string name="isSponsorshipCodeMessage">Eske ou gen yon kod parenaj?
+Kod parenaj la se si ou gen on zanmiw
+ki referew epi li te ba ou on kod parenaj.
+
+Si ou pa gen youn, jis peze NON.</string>
+    <string name="yes">Wi</string>
+    <string name="no">Non</string>
+    <string name="add_a_referral_code">Ajoute yon kòd parenajAjoute yon kòd parenaj</string>
+    <string name="sms_verification">Verifikasyon SMS</string>
+    <string name="we_have_just_sent_a_code_temporary_by_sms_on_your_phone_number.">Nou sot voye yon kòd tanporè pa SMS sou nimewo telefòn ou.</string>
+    <string name="did_you_not_receive_the_code">Ou pa resevwa kòd la?</string>
+    <string name="send_another_sms_again">Voye yon lòt SMS ankò</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="ok">OK</string>
+    <string name="create_secret_code">Kreye kòd sekrè</string>
+    <string name="choose_4_numbers_as_your_secret_code_this_number_do_not_give_it_to_anyone.">Chwazi 4 nimewo kòm kòd sekrè ou.
+Nimewo sa, Pa bay okenn moun li.
+</string>
+    <string name="verify_the_secret_code">Verifye kòd sekrè a</string>
+    <string name="enter_the_secret_code_again_to_verify.">Antre kòd sekrè yon lòt fwa pou verifye.</string>
+<!--    <string name="clear">clear</string>-->
+
+
 
     <string name="flashcardQuestion">What is the first black people free in the world ?</string>
     <string name="flashcardAnswerHint">Empty</string>

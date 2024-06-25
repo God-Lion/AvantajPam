@@ -1,180 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TermsAndConditions"
-    android:id="@+id/terms_and_conditions">
+    tools:context=".TermsAndConditions">
+
     <ImageView
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
-        android:gravity="start"
-        android:textSize="13sp"
-        android:layout_gravity="start"
         android:contentDescription="@string/button_previous_card"
         android:src="@drawable/ic_arrow_back"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"  />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/logo"
-        android:layout_below="@id/btnBack"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="235dp"
-        android:layout_gravity="left"
+        android:layout_marginTop="38dp"
         android:contentDescription="@string/button_previous_card"
         android:src="@drawable/avantajpam"
-        tools:ignore="RedundantDescriptionCheck,RtlHardcoded"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:layout_marginBottom="60dp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        tools:ignore="ContentDescription,RedundantDescriptionCheck,RtlHardcoded" />
 
     <TextView
         android:id="@+id/termsAndConditionsTitle"
-        android:layout_below="@id/logo"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="37dp"
         android:gravity="center"
         android:text="@string/accept_the_terms_and_conditions_and_press_on_button_register"
-        android:layout_marginStart="37dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="47dp"
         android:textSize="13sp"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <LinearLayout
         android:id="@+id/grouptermsAndConditions"
-        android:layout_below="@id/termsAndConditionsTitle"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:layout_marginTop="6dp"
         android:layout_marginStart="68dp"
+        android:layout_marginTop="47dp"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="47dp"
-        >
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/termsAndConditionsTitle">
 
-            <ImageView
-                android:id="@+id/image_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_cube"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="6dp"
-                android:layout_marginEnd="12dp"
-                />
-            <TextView
-                android:id="@+id/text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/i_am_over_18_years_old_and_i_agree_terms_and_conditions."
-                android:gravity="center"/>
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/ic_cube" />
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/i_am_over_18_years_old_and_i_agree_terms_and_conditions." />
 
-    <!--    <LinearLayout-->
-<!--        android:id="@+id/grouptermsAndConditions"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/termsAndConditionsTitle"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:gravity="end"-->
-<!--        android:layout_marginTop="6dp"-->
-<!--        android:layout_marginStart="68dp"-->
-<!--        android:layout_marginEnd="68dp"-->
-<!--        android:layout_marginBottom="47dp"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        >-->
+    </LinearLayout>
 
-<!--        <ImageView-->
-<!--            android:id="@+id/ic_cube"-->
-<!--            android:layout_width="10dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="left"-->
-<!--            android:contentDescription="@string/button_previous_card"-->
-<!--            android:src="@drawable/ic_cube"-->
-<!--            tools:ignore="RedundantDescriptionCheck,RtlHardcoded"-->
-<!--            android:layout_weight="1"-->
-<!--            />-->
-
-<!--        <Spinner-->
-<!--            android:id="@+id/country_code_spinner"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_marginTop="13dp"-->
-<!--            android:layout_marginBottom="13dp"-->
-<!--            android:layout_marginStart="23dp"-->
-<!--            android:layout_marginEnd="18dp"/>-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/i_am_over_18_years_old_and_i_agree_terms_and_conditions"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_margin="5dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="@string/i_am_over_18_years_old_and_i_agree_terms_and_conditions."-->
-<!--            android:textSize="13sp"-->
-<!--            />-->
-
-<!--    </LinearLayout>-->
-
-    <Button
+    <TextView
         android:id="@+id/termsAndConditions"
-        android:layout_below="@id/grouptermsAndConditions"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/termsAndConditions"
-        android:background="?android:attr/selectableItemBackground"
-        android:textColor="@color/hyperlink_blue"
-        android:textAllCaps="false"
-        android:padding="8dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:layout_marginBottom="11dp"
-        android:layout_centerHorizontal="true"
-    />
-
-    <Button
-        android:id="@+id/privacyPolicy"
-        android:layout_below="@id/termsAndConditions"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/privacyPolicy"
-        android:background="?android:attr/selectableItemBackground"
-        android:textColor="@color/hyperlink_blue"
-        android:textAllCaps="false"
-        android:padding="8dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:layout_marginBottom="36dp"
-        android:layout_centerHorizontal="true"
-        android:autoLink="web"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="37dp"
+        android:gravity="center"
         android:linksClickable="true"
-    />
+        android:minHeight="48dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:text="@string/termsAndConditions"
+        android:textAllCaps="false"
+        android:textColor="@color/hyperlink_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grouptermsAndConditions" />
+
+    <TextView
+        android:id="@+id/privacyPolicy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="37dp"
+        android:autoLink="web"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:text="@string/privacyPolicy"
+        android:textAllCaps="false"
+        android:textColor="@color/hyperlink_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/termsAndConditions" />
 
     <Button
         android:id="@+id/btnContinue"
-        android:layout_below="@id/privacyPolicy"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginStart="27dp"
-        android:layout_marginEnd="26dp"
         android:layout_marginTop="38dp"
+        android:layout_marginEnd="26dp"
         android:layout_marginBottom="36dp"
         android:text="@string/continu"
         android:textColor="@color/white"
-        tools:ignore="VisualLintButtonSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/privacyPolicy"
+        tools:ignore="VisualLintButtonSize" />
 
-    />
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
