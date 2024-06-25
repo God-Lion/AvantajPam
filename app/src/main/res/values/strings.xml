@@ -43,6 +43,20 @@ Nimewo sa, Pa bay okenn moun li.
     <string name="new_secret_code">Nouvo Kòd Sekrè</string>
     <string name="confirm_secret_code">Konfime Kòd Sekrè</string>
     <string name="confirm">Konfime</string>
+    <string name="electronic_address">Adrès Elektronik </string>
+    <string name="last_name">Siyati</string>
+    <string name="first_name">Nonw</string>
+    <string name="sexe">Sèks</string>
+    <string name="male">Maskilen</string>
+    <string name="female">Feminen</string>
+    <string name="department">Depatman</string>
+    <string name="west">Wès</string>
+    <string name="town">Komin</string>
+    <string name="PetoonVille">Petyonvil</string>
+    <string name="last_name_placeholder">Sebastien</string>
+    <string name="first_name_placeholder">Barjon</string>
+    <string name="electronic_address_placeholder">jsbarjon</string>
+
 
 
 
