@@ -65,7 +65,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp">
 
                 <TextView
                     android:id="@+id/last_name"
@@ -74,9 +77,10 @@
                     android:text="@string/last_name"
                     android:labelFor="@id/editTextTextLastName"
                     android:layout_weight="1"
-                    android:minWidth="48dp"
-                    android:minHeight="48dp"
-                    android:textColor="@color/text_label_blue"/>
+                    android:minHeight="8dp"
+                    android:textColor="@color/text_label_blue"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="22dp"/>
 
                 <EditText
                     android:id="@+id/editTextTextLastName"
@@ -86,9 +90,11 @@
                     android:ems="10"
                     android:importantForAutofill="no"
                     android:inputType="text"
+                    android:text="@string/last_name_placeholder"
+                    android:layout_marginStart="0dp"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
-                    android:text="@string/last_name_placeholder"/>
+                    android:paddingStart="15dp"/>
 
             </LinearLayout>
             <LinearLayout
@@ -98,7 +104,10 @@
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/group_last_name">
+                app:layout_constraintTop_toBottomOf="@id/group_last_name"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp">
 
                 <TextView
                     android:id="@+id/first_name"
@@ -107,9 +116,10 @@
                     android:text="@string/first_name"
                     android:labelFor="@id/editTextTextFirstName"
                     android:layout_weight="1"
-                    android:minWidth="48dp"
-                    android:minHeight="48dp"
-                    android:textColor="@color/text_label_blue"/>
+                    android:textColor="@color/text_label_blue"
+                    android:minHeight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="22dp"/>
 
                 <EditText
                     android:id="@+id/editTextTextFirstName"
@@ -119,9 +129,11 @@
                     android:ems="4"
                     android:importantForAutofill="no"
                     android:inputType="text"
+                    android:text="@string/first_name_placeholder"
+                    android:layout_marginStart="0dp"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
-                    android:text="@string/first_name_placeholder"/>
+                    android:paddingStart="15dp"/>
 
             </LinearLayout>
             <LinearLayout
@@ -131,34 +143,46 @@
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/group_first_name">
+                app:layout_constraintTop_toBottomOf="@id/group_first_name"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp">
 
                 <TextView
                     android:id="@+id/sexe"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:text="@string/sexe"
-                    android:labelFor="@id/editTextTextFirstName"
+                    android:labelFor="@id/radio_group_sexe"
                     android:layout_weight="1"
-                    android:minWidth="48dp"
-                    android:minHeight="48dp"
-                    android:textColor="@color/text_label_blue"/>
+                    android:textColor="@color/text_label_blue"
+                    android:minHeight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="22dp"/>
 
                 <RadioGroup
+                    android:id="@+id/radio_group_sexe"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="0dp"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp">
 
                     <RadioButton
                         android:id="@+id/male"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="@string/male" />
+                        android:text="@string/male"
+                        android:layout_weight="1"
+                        />
 
                     <RadioButton
                         android:id="@+id/female"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_marginEnd="0dp"
                         android:text="@string/female" />
                 </RadioGroup>
 
@@ -170,7 +194,10 @@
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/group_sexe">
+                app:layout_constraintTop_toBottomOf="@id/group_sexe"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp">
 
                 <TextView
                     android:id="@+id/department"
@@ -179,21 +206,20 @@
                     android:text="@string/department"
                     android:labelFor="@id/editTextTextFirstName"
                     android:layout_weight="1"
-                    android:minWidth="48dp"
-                    android:minHeight="48dp"
-                    android:textColor="@color/text_label_blue"/>
+                    android:minHeight="8dp"
+                    android:textColor="@color/text_label_blue"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="22dp"/>
 
                 <Spinner
                     android:id="@+id/departements_spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginBottom="13dp"
                     android:layout_weight="1"
+                    android:layout_marginStart="0dp"
                     android:minWidth="48dp"
-                    android:minHeight="48dp" />
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp"/>
 
             </LinearLayout>
             <LinearLayout
@@ -203,7 +229,10 @@
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/group_department">
+                app:layout_constraintTop_toBottomOf="@id/group_department"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp">
 
                 <TextView
                     android:id="@+id/town"
@@ -212,22 +241,21 @@
                     android:text="@string/town"
                     android:labelFor="@id/town_spinner"
                     android:layout_weight="1"
-                    android:minWidth="48dp"
-                    android:minHeight="48dp"
-                    android:textColor="@color/text_label_blue"/>
+                    android:minHeight="8dp"
+                    android:textColor="@color/text_label_blue"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="22dp"/>
 
                 <Spinner
                     android:id="@+id/town_spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginBottom="13dp"
                     android:layout_weight="1"
+                    android:text="@string/last_name_placeholder"
+                    android:layout_marginStart="0dp"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
-                    android:text="@string/last_name_placeholder"/>
+                    android:paddingStart="15dp"/>
 
             </LinearLayout>
 
@@ -235,7 +263,7 @@
                 android:id="@+id/btnContinue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="68dp"
+                android:layout_marginTop="53dp"
                 android:layout_marginStart="28dp"
                 android:layout_marginEnd="28dp"
                 android:text="@string/confirm"
