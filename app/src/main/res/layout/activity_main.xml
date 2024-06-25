@@ -82,7 +82,6 @@
             android:layout_marginStart="23dp"
             android:layout_marginEnd="18dp"
             android:minWidth="48dp"
-
             android:minHeight="48dp"/>
 
     </LinearLayout>
@@ -95,11 +94,14 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="27dp"
         android:text="@string/connection"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/groupPhone"
         tools:ignore="VisualLintButtonSize"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_gradient_background"
+        app:backgroundTint="@null"
+        app:cornerRadius="54dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

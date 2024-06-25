@@ -36,8 +36,8 @@ Si ou pa gen youn, jis peze NON.</string>
 Nimewo sa, Pa bay okenn moun li.
 </string>
     <string name="verify_the_secret_code">Verifye kòd sekrè a</string>
-    <string name="enter_the_secret_code_again_to_verify.">Antre kòd sekrè yon lòt fwa pou verifye.</string>
-<!--    <string name="clear">clear</string>-->
+    <string name="enter_the_secret_code_again_to_verify">Antre kòd sekrè yon lòt fwa pou verifye.</string>
+    <string name="clear">clear</string>
 
 
 

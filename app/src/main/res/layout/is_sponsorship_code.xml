@@ -53,14 +53,16 @@
         android:contentDescription="@string/save"
         android:minHeight="48dp"
         android:text="@string/yes"
-        app:backgroundTint="@color/green"
         app:layout_constraintEnd_toStartOf="@+id/fabNew"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/isSponsorshipCodeMessage"
         app:srcCompat="@drawable/ic_edit_48dp"
-        app:tint="@android:color/white"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+        android:textColor="@color/white"
+        android:background="@drawable/button_gradient_background"
+        app:backgroundTint="@null"
+        app:cornerRadius="54dp"/>
 
     <Button
         android:id="@+id/fabNew"
@@ -70,12 +72,15 @@
         android:contentDescription="@string/newFlashCard"
         android:minHeight="48dp"
         android:text="@string/no"
-        app:backgroundTint="@color/orange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fabEdit"
         app:layout_constraintTop_toBottomOf="@id/isSponsorshipCodeMessage"
         app:srcCompat="@drawable/ic_add_black_24dp"
         app:tint="@android:color/white"
-        tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+        tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck"
+        android:textColor="@color/white"
+        android:background="@drawable/button_secondary_gradient_background"
+        app:backgroundTint="@null"
+        app:cornerRadius="54dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

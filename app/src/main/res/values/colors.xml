@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="button_background_gradient_color_1">#5552FE</color>
+    <color name="button_background_gradient_color_2">#16EDFC</color>
+    <color name="button_secondary_background_gradient_color_1">#FF9113</color>
+    <color name="button_secondary_background_gradient_color_2">#FFC352</color>
     <color name="hyperlink_blue">#0000EE</color>
+    <color name="btn_background_number_yellow">#FFC709</color>
+    <color name="btn_text_number_blue">#18466B</color>
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
@@ -15,5 +23,4 @@
     <color name="orange">#F29849</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
 </resources>
