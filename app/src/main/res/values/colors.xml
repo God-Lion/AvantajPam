@@ -8,6 +8,8 @@
     <color name="hyperlink_blue">#0000EE</color>
     <color name="btn_background_number_yellow">#FFC709</color>
     <color name="btn_text_number_blue">#18466B</color>
+    <color name="text_label_yellow">#F58220</color>
+    <color name="text_label_blue">#0E76BC</color>
 
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
