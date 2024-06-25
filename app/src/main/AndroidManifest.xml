@@ -12,7 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AvantajPam"
         tools:targetApi="31">
-        <activity android:name=".EditFlashCardActivity" android:exported="true" />
+        <activity android:name=".ChangeEmailActivity" android:exported="true" />
+        <activity android:name=".ChangePinActivity" android:exported="true" />
+        <activity android:name=".SecretCodeVerificationActivity" android:exported="true" />
+        <activity android:name=".CreateSecretCodeActivity" android:exported="true" />
+        <activity android:name=".SMSVerificationActivity" android:exported="true" />
+        <activity android:name=".AddSponsorshipCodeActivity" android:exported="true" />
+        <activity android:name=".IsSponsorshipCodeActivity" android:exported="true" />
+        <activity android:name=".TermsAndConditionsActivity" android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.NoTitleBar"
