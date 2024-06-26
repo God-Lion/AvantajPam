@@ -88,30 +88,38 @@
                     android:orientation="horizontal">
 
 
-                    <CheckBox
-                        android:id="@+id/checkBox"
+                    <ToggleButton
+                        android:id="@+id/nif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Nif"
+                        android:textOn="@string/nif"
+                        android:textOff="@string/nif"
                         android:layout_marginStart="0dp"
-                        android:layout_marginEnd="21dp"/>
+                        android:layout_marginEnd="21dp"
+                        android:background="@drawable/button_selector" />
 
-                    <CheckBox
-                        android:id="@+id/checkBox2"
+                    <ToggleButton
+                        android:id="@+id/ninu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Ninu"
-                        android:layout_marginEnd="21dp"/>
+                        android:textOn="@string/ninu"
+                        android:textOff="@string/ninu"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="21dp"
+                        android:background="@drawable/button_selector" />
 
-                    <CheckBox
-                        android:id="@+id/checkBox3"
+                    <ToggleButton
+                        android:id="@+id/passport"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Paspò"
-                        android:layout_marginEnd="0dp"/>
+                        android:textOn="@string/passport"
+                        android:textOff="@string/passport"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/button_selector" />
+
                 </LinearLayout>
 
 
@@ -152,7 +160,8 @@
                     android:layout_marginStart="0dp"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
-                    android:paddingStart="16dp"/>
+                    android:paddingStart="16dp"
+                    android:background="@drawable/button_normal" />
 
             </LinearLayout>
             <ImageView
@@ -174,7 +183,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="13dp"
-                android:background="@android:color/transparent"
                 android:text="@string/add_id_photo"
                 android:textColor="@color/text_label_gray"
                 app:backgroundTint="@null"
@@ -186,7 +194,8 @@
                 app:layout_constraintVertical_bias="1.0"
                 tools:ignore="VisualLintButtonSize"
                 android:layout_marginTop="38dp"
-                android:layout_marginHorizontal="11dp"/>
+                android:layout_marginHorizontal="11dp"
+                android:background="@drawable/button_normal" />
             <ImageView
                 android:id="@+id/preview_photo"
                 android:layout_width="match_parent"

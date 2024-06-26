@@ -58,7 +58,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sms_verification" />
 
-
     <com.mukeshsolanki.OtpView
         android:id="@+id/otp_view"
         android:layout_width="wrap_content"
@@ -67,14 +66,13 @@
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         android:inputType="text"
-        android:itemBackground="@drawable/bg_otp_item"
+        android:itemBackground="@drawable/bg_otp_item_underscore"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
-        app:OtpHideLineWhenFilled="true"
+        app:OtpHideLineWhenFilled="false"
         app:OtpItemCount="4"
         app:OtpItemSpacing="6dp"
         app:OtpLineColor="@color/otp_item_state"
-        app:OtpState_filled="true"
         app:OtpViewType="line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,6 +114,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/did_you_not_receive_the_code_message" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/send_another_sms_again_message"/>
 
 
 

@@ -71,7 +71,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnYesAddCode"
         app:layout_constraintTop_toBottomOf="@id/isSponsorshipCodeMessage"
-        app:srcCompat="@drawable/ic_add_black_24dp"
         app:tint="@android:color/white"
         tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck"
         android:textColor="@color/white"
