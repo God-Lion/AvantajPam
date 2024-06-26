@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
-        android:contentDescription="@string/button_previous_card"
         android:src="@drawable/ic_arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +24,6 @@
         android:layout_marginBottom="68dp"
         android:layout_marginStart="127dp"
         android:layout_marginEnd="127dp"
-        android:contentDescription="@string/button_previous_card"
         android:src="@drawable/avantajpam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -269,7 +267,7 @@
                 android:backgroundTint="@color/btn_background_number_yellow" />
 
             <Button
-                android:id="@+id/button_ok"
+                android:id="@+id/btnOk"
                 android:layout_margin="5dp"
                 android:text="@string/ok"
                 android:layout_width="50dp"

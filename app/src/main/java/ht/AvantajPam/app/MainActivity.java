@@ -7,22 +7,26 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Spinner countryCodeSpinner = findViewById(R.id.country_code_spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.country_codes, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        String[] countryCodeArray = this.getResources().getStringArray(R.array.country_codes);
+        ArrayList<String> countryCodes = new ArrayList<>();
+        Collections.addAll(countryCodes, countryCodeArray);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, countryCodes);
         countryCodeSpinner.setAdapter(adapter);
+        countryCodeSpinner.setSelection(0);
         Button BtnConnection = findViewById(R.id.BtnConnection);
-        BtnConnection.setOnClickListener(view -> onAddNewFlashCard());
+        BtnConnection.setOnClickListener(view -> onButtonNextAction());
     }
 
-    private void onAddNewFlashCard () {
+    private void onButtonNextAction () {
         startActivity(new Intent(this, TermsAndConditionsActivity.class));
-//        overridePendingTransition(R.anim.right_in, R.anim.left_out);
     }
 }

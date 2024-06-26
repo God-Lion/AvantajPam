@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
-        android:contentDescription="@string/button_previous_card"
         android:src="@drawable/ic_arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,7 +21,6 @@
         android:layout_width="0dp"
         android:layout_height="235dp"
         android:layout_marginTop="38dp"
-        android:contentDescription="@string/button_previous_card"
         android:src="@drawable/avantajpam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,14 +43,14 @@
         app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <Button
-        android:id="@+id/fabEdit"
+        android:id="@+id/btnYesAddCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="49dp"
         android:layout_marginEnd="41dp"
         android:minHeight="48dp"
         android:text="@string/yes"
-        app:layout_constraintEnd_toStartOf="@+id/fabNew"
+        app:layout_constraintEnd_toStartOf="@+id/btnNoContinue"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/isSponsorshipCodeMessage"
@@ -64,14 +62,14 @@
         app:cornerRadius="54dp"/>
 
     <Button
-        android:id="@+id/fabNew"
+        android:id="@+id/btnNoContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="49dp"
         android:minHeight="48dp"
         android:text="@string/no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fabEdit"
+        app:layout_constraintStart_toEndOf="@+id/btnYesAddCode"
         app:layout_constraintTop_toBottomOf="@id/isSponsorshipCodeMessage"
         app:srcCompat="@drawable/ic_add_black_24dp"
         app:tint="@android:color/white"
