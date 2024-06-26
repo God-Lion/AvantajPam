@@ -8,8 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import ht.AvantajPam.app.fragment.ButtonNumberPad;
+import ht.AvantajPam.app.fragment.NumberPadListener;
 
-public class SMSVerificationActivity extends AppCompatActivity {
+public class SMSVerificationActivity extends AppCompatActivity  implements NumberPadListener {
 
     @Override
     protected void onCreate ( Bundle savedInstanceState ) {
@@ -22,6 +23,12 @@ public class SMSVerificationActivity extends AppCompatActivity {
             ft.add(R.id.fragment_container_view, firstFragment);
             ft.commit();
         }
+    }
+
+    @Override
+    public void onNumberClicked(String number) {
+        // Handle button click here, e.g., update UI, process number
+        Log.i("SMSVerificationActivity", "Number clicked: " + number);
     }
 
     private void onButtonNextAction () {
