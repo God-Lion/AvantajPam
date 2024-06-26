@@ -27,12 +27,9 @@ public class SMSVerificationActivity extends AppCompatActivity  implements Numbe
 
     @Override
     public void onNumberClicked(String number) {
-        // Handle button click here, e.g., update UI, process number
         Log.i("SMSVerificationActivity", "Number clicked: " + number);
-    }
-
-    private void onButtonNextAction () {
-        startActivity(new Intent(this, CreateSecretCodeActivity.class));
+        if (number.equals("ok"))
+            startActivity(new Intent(this, CreateSecretCodeActivity.class));
     }
 
 }

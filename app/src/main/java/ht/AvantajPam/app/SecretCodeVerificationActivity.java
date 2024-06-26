@@ -9,8 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import ht.AvantajPam.app.fragment.ButtonNumberPad;
+import ht.AvantajPam.app.fragment.NumberPadListener;
 
-public class SecretCodeVerificationActivity extends AppCompatActivity {
+public class SecretCodeVerificationActivity extends AppCompatActivity implements NumberPadListener {
 
     @Override
     protected void onCreate ( Bundle savedInstanceState ) {
@@ -25,7 +26,11 @@ public class SecretCodeVerificationActivity extends AppCompatActivity {
             ft.commit();
         }
     }
-    private void onButtonNextAction () {
-        startActivity(new Intent(this, HomeActivity.class));
+
+    @Override
+    public void onNumberClicked(String number) {
+        Log.i("SecretCodeVerificationActivity", "Number clicked: " + number);
+        if (number.equals("ok"))
+            startActivity(new Intent(this, HomeActivity.class));
     }
 }

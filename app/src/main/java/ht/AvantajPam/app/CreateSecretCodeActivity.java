@@ -3,14 +3,14 @@ package ht.AvantajPam.app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import ht.AvantajPam.app.fragment.ButtonNumberPad;
+import ht.AvantajPam.app.fragment.NumberPadListener;
 
-public class CreateSecretCodeActivity extends AppCompatActivity {
+public class CreateSecretCodeActivity extends AppCompatActivity implements NumberPadListener {
 
     @Override
     protected void onCreate ( Bundle savedInstanceState ) {
@@ -25,7 +25,10 @@ public class CreateSecretCodeActivity extends AppCompatActivity {
             ft.commit();
         }
     }
-    private void onButtonNextAction () {
-        startActivity(new Intent(this, SecretCodeVerificationActivity.class));
+
+    public void onNumberClicked(String number) {
+        Log.i("CreateSecretCodeActivity", "Number clicked: " + number);
+        if (number.equals("ok"))
+            startActivity(new Intent(this, SecretCodeVerificationActivity.class));
     }
 }
