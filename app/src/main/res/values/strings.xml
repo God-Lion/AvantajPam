@@ -31,6 +31,7 @@ Si ou pa gen youn, jis peze NON.</string>
     <string name="_9">9</string>
     <string name="_0">0</string>
     <string name="ok">OK</string>
+    <string name="secret_code">Kòd sekrè</string>
     <string name="create_secret_code">Kreye kòd sekrè</string>
     <string name="choose_4_numbers_as_your_secret_code_this_number_do_not_give_it_to_anyone.">Chwazi 4 nimewo kòm kòd sekrè ou.
 Nimewo sa, Pa bay okenn moun li.
@@ -39,7 +40,7 @@ Nimewo sa, Pa bay okenn moun li.
     <string name="enter_the_secret_code_again_to_verify">Antre kòd sekrè yon lòt fwa pou verifye.</string>
     <string name="clear">clear</string>
     <string name="change_pin">Chanje Pin</string>
-    <string name="old_ecret_code">Ansyen Kòd Sekrè</string>
+    <string name="old_secret_code">Ansyen Kòd Sekrè</string>
     <string name="new_secret_code">Nouvo Kòd Sekrè</string>
     <string name="confirm_secret_code">Konfime Kòd Sekrè</string>
     <string name="confirm">Konfime</string>
@@ -53,9 +54,28 @@ Nimewo sa, Pa bay okenn moun li.
     <string name="west">Wès</string>
     <string name="town">Komin</string>
     <string name="PetoonVille">Petyonvil</string>
+    <string name="number_id">Nimewo</string>
+    <string name="add_id_photo">Ajoute foto pyès</string>
+    <string name="fullname">Siyati ak Prenon</string>
+    <string name="birthdate">Dat Nesans</string>
+    <string name="user_number">Nimewo Itilizatè</string>
+    <string name="language">Lang</string>
+    <string name="no_identity">No Idantite</string>
+    <string name="delete_my_account">Siprime Kont Mwen</string>
+    <string name="verify_your_account">Verifye kont ou</string>
+    <string name="waiting_to_verify">An atant verifikasyon</string>
+    <string name="haitian_creol">Kreyòl</string>
+
+
+
+    <string name="number_id_placeholder">123-123-123-1</string>
     <string name="last_name_placeholder">Sebastien</string>
     <string name="first_name_placeholder">Barjon</string>
     <string name="electronic_address_placeholder">jsbarjon</string>
+    <string name="phone_number_placeholder">+509 38217170</string>
+    <string name="secret_code_placeholder">****</string>
+    <string name="n_a_placeholder">N/A</string>
+
 
 
 

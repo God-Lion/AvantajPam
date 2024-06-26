@@ -10,6 +10,8 @@
     <color name="btn_text_number_blue">#18466B</color>
     <color name="text_label_yellow">#F58220</color>
     <color name="text_label_blue">#0E76BC</color>
+    <color name="text_label_gray">#B4B6B6</color>
+    <color name="text_label_red">#EE352A</color>
 
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
