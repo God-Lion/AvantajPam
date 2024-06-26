@@ -61,24 +61,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.synnapps.carouselview.CarouselView
-                android:id="@+id/carouselView"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="#444"
-                app:animateOnBoundary="true"
-                app:autoPlay="true"
-                app:fillColor="#FFFFFFFF"
-                app:indicatorGravity="top"
-                app:pageColor="#00000000"
-                app:pageTransformInterval="1500"
-                app:pageTransformer="depth"
-                app:radius="6dp"
-                app:slideInterval="3000"
-                app:strokeColor="#FF777777"
-                app:indicatorVisibility="gone"
-                app:strokeWidth="1dp"
-                tools:ignore="MissingClass" />
+<!--            <com.synnapps.carouselview.CarouselView-->
+<!--                android:id="@+id/carouselView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:background="#444"-->
+<!--                app:animateOnBoundary="true"-->
+<!--                app:autoPlay="true"-->
+<!--                app:fillColor="#FFFFFFFF"-->
+<!--                app:indicatorGravity="top"-->
+<!--                app:pageColor="#00000000"-->
+<!--                app:pageTransformInterval="1500"-->
+<!--                app:pageTransformer="depth"-->
+<!--                app:radius="6dp"-->
+<!--                app:slideInterval="3000"-->
+<!--                app:strokeColor="#FF777777"-->
+<!--                app:indicatorVisibility="gone"-->
+<!--                app:strokeWidth="1dp"-->
+<!--                tools:ignore="MissingClass" />-->
 
 
 

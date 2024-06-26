@@ -57,7 +57,7 @@
         app:srcCompat="@drawable/ic_edit_48dp"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
         android:textColor="@color/white"
-        android:background="@drawable/button_gradient_background"
+        android:background="@drawable/button_bg"
         app:backgroundTint="@null"
         app:cornerRadius="54dp"/>
 
@@ -75,7 +75,7 @@
         app:tint="@android:color/white"
         tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck"
         android:textColor="@color/white"
-        android:background="@drawable/button_secondary_gradient_background"
+        android:background="@drawable/button_secondary_bg"
         app:backgroundTint="@null"
         app:cornerRadius="54dp"/>
 

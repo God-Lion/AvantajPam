@@ -53,7 +53,7 @@
                         </LinearLayout>
 
                     </LinearLayout>
-                    <Button android:id="@+id/btnContinue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="63dp" android:text="@string/confirm" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/groupField" tools:ignore="VisualLintButtonSize" android:textColor="@color/white" android:background="@drawable/button_gradient_background" app:backgroundTint="@null" app:cornerRadius="54dp"/>
+                    <Button android:id="@+id/btnContinue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="63dp" android:text="@string/confirm" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/groupField" tools:ignore="VisualLintButtonSize" android:textColor="@color/white" android:background="@drawable/button_bg" app:backgroundTint="@null" app:cornerRadius="54dp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

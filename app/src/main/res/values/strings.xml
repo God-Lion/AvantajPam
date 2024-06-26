@@ -67,7 +67,6 @@ Nimewo sa, Pa bay okenn moun li.
     <string name="haitian_creol">Kreyòl</string>
 
 
-
     <string name="number_id_placeholder">123-123-123-1</string>
     <string name="last_name_placeholder">Sebastien</string>
     <string name="first_name_placeholder">Barjon</string>
@@ -75,5 +74,7 @@ Nimewo sa, Pa bay okenn moun li.
     <string name="phone_number_placeholder">+509 38217170</string>
     <string name="secret_code_placeholder">****</string>
     <string name="n_a_placeholder">N/A</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
