@@ -126,7 +126,8 @@
                         android:text="@string/electronic_address_placeholder"
                         android:textAlignment="center"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/electronic_address" />
+                        app:layout_constraintTop_toBottomOf="@id/electronic_address"
+                        android:background="@drawable/button_normal" />
 
 
                     <Button

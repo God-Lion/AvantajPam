@@ -65,6 +65,9 @@ Nimewo sa, Pa bay okenn moun li.
     <string name="verify_your_account">Verifye kont ou</string>
     <string name="waiting_to_verify">An atant verifikasyon</string>
     <string name="haitian_creol">Kreyòl</string>
+    <string name="nif">Nif</string>
+    <string name="ninu">Ninu</string>
+    <string name="passport">PPaspò</string>
 
 
     <string name="number_id_placeholder">123-123-123-1</string>
