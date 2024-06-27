@@ -32,11 +32,11 @@ public class HomeActivity extends AppCompatActivity {
 //        slideModels.add(new SlideModel("https://c4.wallpaperflare.com/wallpaper/662/618/496/natur-2560x1600-sceneries-wallpaper-preview.jpg", ScaleTypes.valueOf("4 Image")));
 //        imageSlider.setImageList(slideModels,scaleType);
 //
-//        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
-//        bottomNavigationView.setBackgroundColor(Color.TRANSPARENT);
-//        Menu menu = bottomNavigationView.getMenu();
-//        MenuItem menuItem = menu.getItem(4);
-//        menuItem.setEnabled(false);
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setBackgroundColor(Color.TRANSPARENT);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(4);
+        menuItem.setEnabled(false);
 
     }
 }
