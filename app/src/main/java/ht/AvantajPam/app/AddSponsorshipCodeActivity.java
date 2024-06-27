@@ -12,6 +12,13 @@ public class AddSponsorshipCodeActivity extends AppCompatActivity {
     protected void onCreate ( Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_sponsorship_code);
+        Button btnContinue = findViewById(R.id.btnContinue);
+        btnContinue.setOnClickListener(view -> onButtonNextAction());
+
+    }
+
+    private void onButtonNextAction () {
+        startActivity(new Intent(this, SMSVerificationActivity.class));
     }
 
 }

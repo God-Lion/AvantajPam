@@ -21,7 +21,7 @@ public class IsSponsorshipCodeActivity extends AppCompatActivity {
 
     }
     private void onButtonYesNextAction () {
-        startActivity(new Intent(this, SMSVerificationActivity.class));
+        startActivity(new Intent(this, AddSponsorshipCodeActivity.class));
     }
 
     private void onButtonNoNextAction () {
